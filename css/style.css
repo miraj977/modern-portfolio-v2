@@ -907,7 +907,7 @@ small {
   }
   .modal {
     height: 100vh;
-    background-color: rgb(43, 40, 40) !important;
+    background-color: transparent;
   }
   .numbertext {
     padding: 1rem 0.9rem 0;
