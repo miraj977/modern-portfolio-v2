@@ -342,7 +342,7 @@
             <h2 class="section__title section__title--work">My Hobbies</h2>
             <p class="section__subtitle section__subtitle--work">A selection of my range of hobbies</p>
             <!---Slide show--->
-            <div class="columns">
+            <div class="columns art">
                 <p class="placeholder-text">
                     ART (4/28)</p>
                 <div class="column">
@@ -393,7 +393,7 @@ for ($i = 1; $i <= 28; $i++) {
             </div>
             <br>
             <!---End of Slide show--->
-            <div class="columns">
+            <div class="columns food">
                 <p class="placeholder-text">
                     FOOD (4/6)</p>
 

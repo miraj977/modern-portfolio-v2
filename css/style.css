@@ -971,7 +971,7 @@ img.hover-shadow {
 .hover-text {
   position: absolute;
   opacity: 0;
-  top: 30%;
+  top: 38%;
   text-align: center;
   background-color: var(--clr-accent);
   color: black;
@@ -994,6 +994,10 @@ img.hover-shadow {
   -ms-transform: skew(-5deg, 10deg);
   -o-transform: skew(-5deg, 10deg);
   z-index: 2;
+}
+
+.art .column:first-of-type .hover-text {
+  top: 30%;
 }
 
 .column:hover .hover-text {
@@ -1101,6 +1105,11 @@ img.hover-shadow {
   img.hover-shadow {
     height: 320px;
     object-fit: cover;
+  }
+
+  .hover-text,
+  .art .column:first-of-type .hover-text {
+    top: 45%;
   }
 }
 
