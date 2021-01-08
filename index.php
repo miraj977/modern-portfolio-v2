@@ -401,18 +401,22 @@ for ($i = 1; $i <= 28; $i++) {
 
                     <img src="food/1.jpg" style="width:100%" onclick="openModals();currentSlides(1)"
                         class="hover-shadow cursor" alt="Food">
+                    <p class="hover-text">Click to open</p>
                 </div>
                 <div class="column">
                     <img src="food/2.jpg" style="width:100%" onclick="openModals();currentSlides(2)"
                         class="hover-shadow cursor">
+                    <p class="hover-text">Click to open</p>
                 </div>
                 <div class="column">
                     <img src="food/3.jpg" style="width:100%" onclick="openModals();currentSlides(3)"
                         class="hover-shadow cursor">
+                    <p class="hover-text">Click to open</p>
                 </div>
                 <div class="column">
                     <img src="food/4.jpg" style="width:100%" onclick="openModals();currentSlides(4)"
                         class="hover-shadow cursor">
+                    <p class="hover-text">Click to open</p>
                 </div>
             </div>
 
