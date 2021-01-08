@@ -31,7 +31,7 @@
     <body>
         <header>
             <div class="logo">
-                <a href="index.php">/dev-miraj</a>
+                <a href="#" onclick="topFunction()">/dev-miraj</a>
             </div>
             <a class="resume" data-toggle="modal" data-target="#ModalPDF" target="_blank"><span>Resume</span></a>
 
