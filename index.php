@@ -77,6 +77,7 @@
 
         <!-- Introduction -->
         <section class="intro" id="home">
+            <!-- <img src="img/fav.png" class="hero-logo"> -->
             <h1 class="section__title section__title--intro">
                 Hi, I am <strong>Miraj Aryal</strong>
             </h1>

@@ -25,7 +25,6 @@
   --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
   text-rendering: geometricprecision;
-  -webkit-font-smoothing: none;
 }
 
 @media (min-width: 800px) {
@@ -185,6 +184,13 @@ header.scroll {
   color: #000;
   text-decoration: none;
   font-family: var(--font-family-monospace);
+}
+
+.hero-logo {
+  position: absolute;
+  top: 23vh;
+  left: -10vw;
+  opacity: 0.9;
 }
 
 a:hover {
@@ -763,6 +769,10 @@ small {
 /* Small Screen Devices */
 
 @media (max-width: 600px) {
+  .hero-logo {
+    display: none;
+  }
+
   #ModalPDF .modal-footer {
     padding: 0px 0.75rem;
   }
