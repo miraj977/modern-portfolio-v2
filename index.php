@@ -137,7 +137,7 @@
                 </div> <!-- / service -->
             </div> <!-- / services -->
 
-            <a href="#work" class="btn">My Work</a>
+            <a href="#work" class="btn">My Work ↓</a>
         </section>
 
 
@@ -181,7 +181,63 @@
                                 Antenna Central Pty Ltd
                             </div>
                             <div class="project-name">
-                                WordPress (Advanced Custom Field), HTML/CSS, jQuery
+                                <ul>
+                                    <li>
+                                        WordPress (Advanced Custom Field), HTML/CSS, jQuery
+                                    </li>
+                                    <li>
+                                        No page builder used. Custom theme and custom backend developed using Advanced
+                                        Custom Field. (ACF)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <!-- Portfolio item 03 -->
+                <a href="https://newsouthhomes.com.au" target="_blank" class="portfolio__item">
+                    <img src="img/portfolio/thumbnails/3.jpg" alt="" class="portfolio__img">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                New South Homes
+                            </div>
+                            <div class="project-name">
+                                <ul>
+                                    <li>
+                                        WordPress (Advanced Custom Field), HTML/CSS, jQuery
+                                    </li>
+                                    <li>
+                                        No page builder used. Custom theme and custom backend developed using Advanced
+                                        Custom Field. (ACF)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <!-- Portfolio item 03 -->
+                <a href="https://sgbmaintenance.com.au" target="_blank" class="portfolio__item">
+                    <img src="img/portfolio/thumbnails/sgb.png" alt="" class="portfolio__img">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                SGB Group
+                            </div>
+                            <div class="project-name">
+                                <ul>
+                                    <li>
+                                        WordPress (Advanced Custom Field), HTML/CSS, jQuery
+                                    </li>
+                                    <li>
+                                        No page builder used. Custom theme and custom backend developed using Advanced
+                                        Custom Field. (ACF)
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -196,26 +252,20 @@
                                 Lantern Electrical
                             </div>
                             <div class="project-name">
-                                WordPress (Advanced Custom Field), HTML/CSS, jQuery
+                                <ul>
+                                    <li>
+                                        WordPress (Advanced Custom Field), HTML/CSS, jQuery
+                                    </li>
+                                    <li>
+                                        No page builder used. Custom theme and custom backend developed using Advanced
+                                        Custom Field. (ACF)
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </a>
 
-                <!-- Portfolio item 03 -->
-                <a href="https://staging.pictura.com.au/newsouthhomes.com.au" target="_blank" class="portfolio__item">
-                    <img src="img/portfolio/thumbnails/3.jpg" alt="" class="portfolio__img">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                New South Homes
-                            </div>
-                            <div class="project-name">
-                                WordPress (Advanced Custom Field), HTML/CSS, jQuery
-                            </div>
-                        </div>
-                    </div>
-                </a>
 
                 <!-- Portfolio item 04 -->
                 <a href="https://www.ruggedtrailsnepal.com/" target="_blank" class="portfolio__item">

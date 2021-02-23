@@ -154,4 +154,11 @@ function topFunction ()
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     mybutton.style.background = "#ffcb00";
     mybutton.style.color = "#303030";
-} 
+}
+
+
+var child = $( '.portfolio__item' ).length;
+if ( child % 2 != 0 )
+{
+    $( '.portfolio__item:last-child' ).addClass( 'last' );
+}
