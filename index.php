@@ -111,8 +111,10 @@
 
                 <div class="service work">
                     <h3>Work</h3>
+                    <p class="sm"><span>Full-Stack Developer</span><a href="https://raw.studio"
+                            target="_blank">Raw Studio</a>, AU (2021 - Present)</p>
                     <p class="sm"><span>Full-Stack Developer</span><a href="https://picturacreative.com.au"
-                            target="_blank">Pictura Creative</a>, AU (2020 - Present)</p>
+                            target="_blank">Pictura Creative</a>, AU (2020 - 2021)</p>
                     <p class="sm"><span>Web Developer</span><a href="https://everestviewtravels.com.au/
 " target="_blank"> Everest View Travel &
                             Tours</a>, AU (2017 - 19)</p>
@@ -123,16 +125,14 @@
                 <div class="service">
                     <h3>Skills</h3>
                     <ul>
+                        <li>✔ Next.js, React JS, Vanilla JS, jQuery, AJAX</li>
                         <li>✔ HTML5/CSS3</li>
                         <li>✔ PHP/MySQL</li>
-                        <li>✔ Vanilla JS, jQuery, AJAX</li>
-                        <li>✔ Advanced WordPress, ACF</li>
-                        <li>✔ Bootstrap, CSS Preprocessor: SASS</li>
-                        <li>✔ RESTFUL APIs</li>
+                        <li>✔ Advanced WordPress, Headless CMS (WP, Contentful, Strapi.js), Firebase</li>
+                        <li>✔ Tailwind, Styled Components, Material UI, SCSS, Bootstrap</li>
+                        <li>✔ GraphQL, RestAPI</li>
                         <li>✔ Framework: CodeIgniter, Laravel, Yii2, Express</li>
-                        <li>✔ Familiar to React, TailwindCSS, node.js</li>
-                        <li>✔ VSCode, Sketch, Atlassian (Confluence, Jira, BitBucket), Git, WAMP, MAMP,
-                            Transmit, Filezilla, Slack</li>
+                        <li>✔ VSCode, Sketch, Figma, Toggl, Atlassian (Confluence, Jira, BitBucket), Git, WAMP, MAMP, Transmit, Filezilla, Slack</li>
                     </ul>
                 </div> <!-- / service -->
             </div> <!-- / services -->
@@ -158,7 +158,7 @@
                 </p>
                 <p><span>2019:</span> completed my studies and am currently working full-time as a <span
                         class="code">Full-Stack Developer</span>
-                    in North Sydney based Pictura Creative.</p>
+                    in Raw Studio.</p>
                 <code>I love what I do.</code>
                 <small>PS. Apart from coding, I love to draw, listen to 90's hiphop and cook various food.</small>
             </div>
@@ -172,32 +172,56 @@
             <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
 
             <div class="portfolio">
-                <!-- Portfolio item 01 -->
-                <a href="https://antennacentral.com.au" target="_blank" class="portfolio__item">
-                    <img src="img/portfolio/thumbnails/1-2.png" alt="" class="portfolio__img">
+
+             <!-- Portfolio item Whatsapp -->
+                <a href="https://chatapp-five.vercel.app/" target="_blank" class="portfolio__item">
+                    <span class="tag">Whatsapp Inspired Chat app</span>
+                    <img src="img/portfolio/thumbnails/whatsapp.png" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
-                                Antenna Central Pty Ltd
-                            </div>
+                                Chat App</div>
                             <div class="project-name">
                                 <ul>
                                     <li>
-                                        WordPress (Advanced Custom Field), HTML/CSS, jQuery
+                                        NEXT.JS, Firebase, Styled Components, Material UI
                                     </li>
                                     <li>
-                                        No page builder used. Custom theme and custom backend developed using Advanced
-                                        Custom Field. (ACF)
+                                        Powered by Firebase and deployed in Vercel, you can login with your google account and chat with anyone with a valid email address in realtime.
                                     </li>
+                                    <li><b>Contribution: In Progress</b></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </a>
 
+                <!-- Portfolio item 03 -->
+                <a href="https://react-web1.netlify.app/" target="_blank" class="portfolio__item">
+                    <span class="tag">ReactJS (In Progress)</span>
+                    <img src="img/portfolio/thumbnails/10.png" alt="" class="portfolio__img">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                TRVL</div>
+                            <div class="project-name">
+                                <ul>
+                                    <li>
+                                        React JS
+                                    </li>
+                                    <li>
+                                        IN PROGRESS
+                                    </li>
+                                    <li><b>Contribution: Currently Working</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </a>
 
                 <!-- Portfolio item 03 -->
                 <a href="https://newsouthhomes.com.au" target="_blank" class="portfolio__item">
+                    <span class="tag">Advanced WordPress</span>
                     <img src="img/portfolio/thumbnails/3.jpg" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
@@ -207,12 +231,66 @@
                             <div class="project-name">
                                 <ul>
                                     <li>
-                                        WordPress (Advanced Custom Field), HTML/CSS, jQuery
+                                        Advanced WordPress (Advanced Custom Field), HTML/CSS, jQuery
                                     </li>
                                     <li>
                                         No page builder used. Custom theme and custom backend developed using Advanced
                                         Custom Field. (ACF)
                                     </li>
+                                    <li><b>Contribution: Full Development</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <!-- Portfolio item 03 -->
+                <a href="https://staging.pictura.com.au/stopc" target="_blank" class="portfolio__item">
+                    <span class="tag">Advanced WordPress</span>
+                    <img src="img/portfolio/thumbnails/9.png" alt="" class="portfolio__img">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                UNSW Kirby StopC
+                            </div>
+                            <div class="project-name">
+                                <ul>
+                                    <li>
+                                        Advanced WordPress (Advanced Custom Field), HTML/CSS, jQuery
+                                    </li>
+                                    <li>
+                                        No page builder used. Custom theme and custom backend developed using Advanced
+                                        Custom Field. (ACF)
+                                    </li>
+                                    <li><b>Contribution: Full Development</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+
+                <!-- Portfolio item 01 -->
+                <a href="https://antennacentral.com.au" target="_blank" class="portfolio__item">
+                    <span class="tag">Advanced WordPress</span>
+                    <img src="img/portfolio/thumbnails/1-2.png" alt="" class="portfolio__img">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Antenna Central Pty Ltd
+                            </div>
+                            <div class="project-name">
+                                <ul>
+                                    <li>
+                                        Advanced WordPress (Advanced Custom Field), HTML/CSS, jQuery
+                                    </li>
+                                    <li>
+                                        No page builder used. Custom theme and custom backend developed using Advanced
+                                        Custom Field. (ACF)
+                                    </li>
+                                    <li><b>Contribution: Full Development</b></li>
                                 </ul>
                             </div>
                         </div>
@@ -222,6 +300,7 @@
 
                 <!-- Portfolio item 03 -->
                 <a href="https://sgbmaintenance.com.au" target="_blank" class="portfolio__item">
+                    <span class="tag">Advanced WordPress</span>
                     <img src="img/portfolio/thumbnails/sgb.png" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
@@ -231,12 +310,13 @@
                             <div class="project-name">
                                 <ul>
                                     <li>
-                                        WordPress (Advanced Custom Field), HTML/CSS, jQuery
+                                        Advanced WordPress (Advanced Custom Field), HTML/CSS, jQuery
                                     </li>
                                     <li>
                                         No page builder used. Custom theme and custom backend developed using Advanced
                                         Custom Field. (ACF)
                                     </li>
+                                    <li><b>Contribution: Full Development</b></li>
                                 </ul>
                             </div>
                         </div>
@@ -245,6 +325,7 @@
 
                 <!-- Portfolio item 02 -->
                 <a href="https://lanternelectrical.com.au/" target="_blank" class="portfolio__item">
+                    <span class="tag">Advanced WordPress</span>
                     <img src="img/portfolio/thumbnails/2.jpg" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
@@ -254,12 +335,13 @@
                             <div class="project-name">
                                 <ul>
                                     <li>
-                                        WordPress (Advanced Custom Field), HTML/CSS, jQuery
+                                        Advanced WordPress (Advanced Custom Field), HTML/CSS, jQuery
                                     </li>
                                     <li>
                                         No page builder used. Custom theme and custom backend developed using Advanced
                                         Custom Field. (ACF)
                                     </li>
+                                    <li><b>Contribution: Full Development</b></li>
                                 </ul>
                             </div>
                         </div>
@@ -269,6 +351,7 @@
 
                 <!-- Portfolio item 04 -->
                 <a href="https://www.ruggedtrailsnepal.com/" target="_blank" class="portfolio__item">
+                    <span class="tag">CodeIgniter PHP</span>
                     <img src="img/portfolio/thumbnails/4.png" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
@@ -277,6 +360,8 @@
                             </div>
                             <div class="project-name">
                                 HTML/CSS, PHP/MySQL, CodeIgniter, jQuery
+                                <br>
+                                <b>Contribution: Backend Development</b>
                             </div>
                         </div>
                     </div>
@@ -284,6 +369,7 @@
 
                 <!-- Portfolio item 05 -->
                 <a href="https://www.babuadventure.com/" target="_blank" class="portfolio__item">
+                    <span class="tag">CodeIgniter PHP</span>
                     <img src="img/portfolio/thumbnails/6.png" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
@@ -292,6 +378,8 @@
                             </div>
                             <div class="project-name">
                                 HTML/CSS, PHP/MySQL, CodeIgniter, jQuery
+                                <br>
+                                <b>Contribution: Backend Development</b>
                             </div>
                         </div>
                     </div>
@@ -299,6 +387,7 @@
 
                 <!-- Portfolio item 06 -->
                 <a href="http://jobbase.epizy.com/web/" target="_blank" class="portfolio__item">
+                    <span class="tag">Yii2 PHP</span>
                     <img src="img//portfolio/thumbnails/7.png" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
@@ -307,6 +396,7 @@
                             </div>
                             <div class="project-name">
                                 (Yii2 Experiment Project) HTML, CSS, PHP Yii2, Javascript
+                                <br><b>Contribution: Full Development</b>
                             </div>
                         </div>
                     </div>
@@ -314,6 +404,7 @@
 
                 <!-- Portfolio item 07 -->
                 <a href="http://bookingmanage.epizy.com/" target="_blank" class="portfolio__item">
+                    <span class="tag">Core PHP</span>
                     <img src="img//portfolio/thumbnails/1.png" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
@@ -329,6 +420,8 @@
 
                 <!-- Portfolio item 08 -->
                 <a href="http://eventmanage.epizy.com" target="_blank" class="portfolio__item">
+                    <span class="tag">Core PHP</span>
+
                     <img src="img/portfolio/thumbnails/2.png" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
@@ -344,6 +437,7 @@
 
                 <!-- Portfolio item 09 -->
                 <a href="http://www.loyalpartners.epizy.com/" target="_blank" class="portfolio__item">
+                    <span class="tag">Core PHP</span>
                     <img src="img/portfolio/thumbnails/3.png" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
@@ -359,6 +453,7 @@
 
                 <!-- Portfolio item 10-->
                 <a href="http://eventforum.epizy.com/" target="_blank" class="portfolio__item">
+                    <span class="tag">Core PHP</span>
                     <img src="img/portfolio/thumbnails/5.png" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
@@ -374,6 +469,7 @@
 
                 <!-- Portfolio item 10-->
                 <a href="https://miraj977.github.io/scss-portfolio/index.html" target="_blank" class="portfolio__item">
+                    <span class="tag">HTML/ SCSS</span>
                     <img src="img/portfolio/thumbnails/8.png" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
