@@ -318,31 +318,45 @@ button.nav-toggle:active,
   color: #000;
   margin-top: 2px;
   line-height: 20px;
-  transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+}
+
+.resume:hover {
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
 }
 
 .scroll .resume {
+  transition: all 0.4s ease;
   display: unset;
 }
 .resume:hover span {
   display: none;
+  transition: all 0.4s ease;
 }
 
 .resume span {
-  transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
 }
 
 .resume:hover:before {
-  content: "View";
-  padding: 0 10px;
+  content: "";
+  padding: 0 34px;
+  background: url(https://img.icons8.com/metro/26/000000/view-file.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center center;
 }
 
 .modal-dialog {
@@ -621,16 +635,21 @@ button.nav-toggle:active,
 .about-me__body {
   font-family: var(--font-family-sans-serif);
 }
-.about-me__body p {
+
+.about-me__body p,
+.ps {
   margin-bottom: 0.6rem;
+  font-size: 16px !important;
+  font-family: var(--font-family-sans-serif) !important;
 }
+
 .about-me__body span:not(.code),
 .work span {
   border-bottom: 3px solid var(--clr-accent);
   font-family: var(--font-family-monospace);
   font-size: 1rem;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 5px;
 }
 
 small {
@@ -739,6 +758,19 @@ small {
 .zip_item {
   position: relative;
 }
+
+.zip_item:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background: rgba(23, 22, 22, 0.24);
+  height: 100%;
+  z-index: 2;
+  top: 0;
+  opacity: 0.2;
+  left: 0;
+}
+
 .zip_item:after {
   position: absolute;
   content: url("https://img.icons8.com/ios-filled/50/000000/play-button-circled--v5.png");
@@ -893,6 +925,10 @@ small {
 
   .about-me__body span:not(.code) {
     margin: 1rem auto 0.3rem;
+  }
+
+  .about-me__body span.ps {
+    margin-top: 0.2rem;
   }
 
   .about-me__img {
@@ -1286,8 +1322,8 @@ img.hover-shadow {
   background-color: var(--clr-accent);
   color: var(--clr-dark);
   cursor: pointer;
-  height: 40px;
-  width: 45px;
+  height: 35px;
+  width: 40px;
   border-radius: 2px;
   font-family: var(--ff-secondary);
   box-shadow: 0px 0px 12px 2px rgba(15, 55, 55, 0.4);
