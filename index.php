@@ -142,7 +142,7 @@
                 </div> <!-- / service -->
             </div> <!-- / services -->
 
-            <a href="#work" class="btn">My Work ↓</a>
+            <!-- <a href="#work" class="btn">My Work ↓</a> -->
         </section>
 
 
@@ -185,7 +185,7 @@
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
-                                ZIP</div>
+                                ZIP Homepage</div>
                             <div class="project-name">
                                 <ul>
                                     <li>
@@ -194,7 +194,7 @@
                                     <li class="zip-info">
                                         Homepage for logged in users. You can access it by going to https://zip.co
                                         and
-                                        from console add cookie key:zip_id, val: any in <br><b> Application-> Cookies->
+                                        from console add cookie key:zip_id, val:any in <br><b> Application-> Cookies->
                                             zip.co</b><br>
                                         then refresh the page.
                                     </li>
