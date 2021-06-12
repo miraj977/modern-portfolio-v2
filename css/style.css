@@ -584,6 +584,7 @@ button.nav-toggle:active,
 
 .service ul {
   padding: 8px 0 0;
+  margin-bottom: 0;
 }
 
 .service h3 {

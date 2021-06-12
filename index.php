@@ -179,6 +179,8 @@
             <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
 
             <div class="portfolio">
+
+                <!-- Portfolio item Zip -->
                 <a href="https://vimeo.com/562046560" data-lity class="portfolio__item zip_item">
                     <span class="tag">TypeScript, Contentful, GraphQL, Material UI</span>
                     <img src="img/portfolio/thumbnails/zip.png" alt="" class="portfolio__img">
@@ -200,6 +202,32 @@
                                         then refresh the page.
                                     </li>
                                     <li><b>Contribution: Full Development</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <!-- Portfolio item Coinspot -->
+                <a href="https://raw.studio/why-choose-us
+" target="_blank" class="portfolio__item">
+                    <span class="tag">Advanced WordPress, Tailwind CSS</span>
+                    <img src="img/portfolio/thumbnails/raw.png" alt="" class="portfolio__img">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                RAW STUDIO</div>
+                            <div class="project-name">
+                                <ul>
+                                    <li>
+                                        Advanced WordPress, jQuery, GSAP, Tailwind CSS
+                                    </li>
+                                    <li>
+                                        Developed multiple pages and serveral functionalities for user engagement and
+                                        marketing.
+                                    </li>
+                                    <li><b>Contribution: Multiple pages and functionalities</b></li>
                                 </ul>
                             </div>
                         </div>
