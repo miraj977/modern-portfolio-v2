@@ -577,10 +577,6 @@ button.nav-toggle:active,
   opacity: 0.25;
 }
 
-.services {
-  margin-bottom: 2em;
-}
-
 .service {
   margin: 0 auto;
   text-align: left;
