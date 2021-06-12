@@ -180,7 +180,7 @@
 
             <div class="portfolio">
                 <a href="https://vimeo.com/562046560" data-lity class="portfolio__item zip_item">
-                    <span class="tag">TypeScript, Headless CMS: Contentful, Material UI</span>
+                    <span class="tag">TypeScript, Contentful, GraphQL, Material UI</span>
                     <img src="img/portfolio/thumbnails/zip.png" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
@@ -189,7 +189,8 @@
                             <div class="project-name">
                                 <ul>
                                     <li>
-                                        React with TypeScript, Headless CMS: Contentful, Material UI, Styled Component
+                                        React with TypeScript, Headless CMS: Contentful, GraphQL, Material UI, Styled
+                                        Component
                                     </li>
                                     <li class="zip-info">
                                         Homepage for logged in users. You can access it by going to https://zip.co
