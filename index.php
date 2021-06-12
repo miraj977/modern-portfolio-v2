@@ -17,7 +17,9 @@
         <link rel="icon" type="image/png" href="img/fav.png">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
             integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/lity.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
             integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
             crossorigin="anonymous"></script>
@@ -25,7 +27,7 @@
             integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
         </script>
         <script src="https://www.w3counter.com/tracker.js?id=135803"></script>
-
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
     </head>
 
     <body>
@@ -66,7 +68,7 @@
                     <div class="modal-body">
 
                         <object class="PDFdoc" width="100%" height="500px" type="application/pdf"
-                            data="file/Resume.pdf"></object>
+                            data="file/Miraj Aryal Resume 2021.pdf"></object>
                     </div>
 
 
@@ -111,8 +113,8 @@
 
                 <div class="service work">
                     <h3>Work</h3>
-                    <p class="sm"><span>Full-Stack Developer</span><a href="https://raw.studio"
-                            target="_blank">Raw Studio</a>, AU (2021 - Present)</p>
+                    <p class="sm"><span>Full-Stack Developer</span><a href="https://raw.studio" target="_blank">Raw
+                            Studio</a>, AU (2021 - Present)</p>
                     <p class="sm"><span>Full-Stack Developer</span><a href="https://picturacreative.com.au"
                             target="_blank">Pictura Creative</a>, AU (2020 - 2021)</p>
                     <p class="sm"><span>Web Developer</span><a href="https://everestviewtravels.com.au/
@@ -120,19 +122,22 @@
                             Tours</a>, AU (2017 - 19)</p>
                     <p class="sm"><span>PHP Developer</span> <a href="https://imaginewebsolution.com" target="_blank">
                             Imagine Web Solution</a>, Nepal (2014 - 15)</p>
+                    <br>
+                    <p class="sm"> <span>Key Clients:</span> Zip.co, Coinspot, New South Homes, UNSW</p>
                 </div> <!-- / service -->
 
                 <div class="service">
                     <h3>Skills</h3>
                     <ul>
-                        <li>✔ Next.js, React JS, Vanilla JS, jQuery, AJAX</li>
+                        <li>✔ Next.js, React JS, TypeScript, Vanilla JS, jQuery, AJAX</li>
+                        <li>✔ GraphQL, RestAPI</li>
                         <li>✔ HTML5/CSS3</li>
                         <li>✔ PHP/MySQL</li>
                         <li>✔ Advanced WordPress, Headless CMS (WP, Contentful, Strapi.js), Firebase</li>
-                        <li>✔ Tailwind, Styled Components, Material UI, SCSS, Bootstrap</li>
-                        <li>✔ GraphQL, RestAPI</li>
+                        <li>✔ Tailwind CSS, Styled Components, Material UI, SCSS, Bootstrap 5</li>
                         <li>✔ Framework: CodeIgniter, Laravel, Yii2, Express</li>
-                        <li>✔ VSCode, Sketch, Figma, Toggl, Atlassian (Confluence, Jira, BitBucket), Git, WAMP, MAMP, Transmit, Filezilla, Slack</li>
+                        <li>✔ VSCode, Custom EDM, Sketch, Figma, Toggl, Atlassian Tools, Git, WAMP, MAMP, Transmit,
+                            Filezilla, Slack</li>
                     </ul>
                 </div> <!-- / service -->
             </div> <!-- / services -->
@@ -166,16 +171,115 @@
             <img src="img/a.jpg" alt="Miraj leaning against the wall" class="about-me__img">
         </section>
 
+        <!-- Video Player Modal -->
+
         <!-- My Work -->
         <section class="my-work" id="work">
             <h2 class="section__title section__title--work">My work</h2>
             <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
 
             <div class="portfolio">
+                <a href="https://vimeo.com/562046560" data-lity class="portfolio__item zip_item">
+                    <span class="tag">TypeScript, Headless CMS: Contentful, Material UI</span>
+                    <img src="img/portfolio/thumbnails/zip.png" alt="" class="portfolio__img">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                ZIP</div>
+                            <div class="project-name">
+                                <ul>
+                                    <li>
+                                        React with TypeScript, Headless CMS: Contentful, Material UI, Styled Component
+                                    </li>
+                                    <li class="zip-info">
+                                        Homepage for logged in users. You can access it by going to https://zip.co
+                                        and
+                                        from console add cookie key:zip_id, val: any in <br><b> Application-> Cookies->
+                                            zip.co</b><br>
+                                        then refresh the page.
+                                    </li>
+                                    <li><b>Contribution: Full Development</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </a>
 
-             <!-- Portfolio item Whatsapp -->
+                <!-- Portfolio item Coinspot -->
+                <a href="https://coinspot-edms.netlify.app/
+" target="_blank" class="portfolio__item">
+                    <span class="tag">Custom EDMs</span>
+                    <img src="img/portfolio/thumbnails/edm.png" alt="" class="portfolio__img">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Coinspot EDMs</div>
+                            <div class="project-name">
+                                <ul>
+                                    <li>
+                                        HTML, CSS
+                                    </li>
+                                    <li>
+                                        Custom coded Email Templates for Coinspot
+                                    </li>
+                                    <li><b>Contribution: Full Development</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Portfolio item Coinspot -->
+                <a href="https://coinspot-homepage-1.netlify.app/
+" target="_blank" class="portfolio__item">
+                    <span class="tag">Bootstrap 5</span>
+                    <img src="img/portfolio/thumbnails/coinspot.png" alt="" class="portfolio__img">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Coinspot</div>
+                            <div class="project-name">
+                                <ul>
+                                    <li>
+                                        Bootstrap 5, SCSS
+                                    </li>
+                                    <li>
+                                        Homepage for Coinspot
+                                    </li>
+                                    <li><b>Contribution: Full Development</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Portfolio item Coinspot -->
+                <a href="https://coinspot-otc.netlify.app/
+" target="_blank" class="portfolio__item">
+                    <span class="tag">Bootstrap 5</span>
+                    <img src="img/portfolio/thumbnails/otc.png" alt="" class="portfolio__img">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Coinspot</div>
+                            <div class="project-name">
+                                <ul>
+                                    <li>
+                                        Bootstrap 5, SCSS
+                                    </li>
+                                    <li>
+                                        OTC Page for Coinspot
+                                    </li>
+                                    <li><b>Contribution: Full Development</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Portfolio item Whatsapp -->
                 <a href="https://chatapp-five.vercel.app/" target="_blank" class="portfolio__item">
-                    <span class="tag">Whatsapp Inspired Chat app</span>
+                    <span class="tag">Next.js</span>
                     <img src="img/portfolio/thumbnails/whatsapp.png" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
@@ -187,7 +291,8 @@
                                         NEXT.JS, Firebase, Styled Components, Material UI
                                     </li>
                                     <li>
-                                        Powered by Firebase and deployed in Vercel, you can login with your google account and chat with anyone with a valid email address in realtime.
+                                        Powered by Firebase and deployed in Vercel, you can login with your google
+                                        account and chat with anyone with a valid email address in realtime.
                                     </li>
                                     <li><b>Contribution: In Progress</b></li>
                                 </ul>
@@ -623,7 +728,7 @@ for ($i = 1; $i <= 6; $i++) {
 
 
         <script src="js/index.js"></script>
-
+        <script src="js/lity.min.js"></script>
     </body>
 
 </html>

@@ -41,6 +41,7 @@
 /* endable this to add smooth scrolling */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -405,6 +406,7 @@ button.nav-toggle:active,
 .tag {
   position: absolute;
   left: 0;
+  top: 10;
   background: var(--clr-accent);
   color: #000;
   font-size: 14px;
@@ -414,7 +416,11 @@ button.nav-toggle:active,
   width: max-content;
   text-align: left;
   box-shadow: 0px 4px 4px -3px #00000094;
-  border-radius: 29px 0px;
+  border-radius: 0px 25px;
+  -webkit-border-radius: 0px 25px;
+  -moz-border-radius: 0px 25px;
+  -ms-border-radius: 0px 25px;
+  -o-border-radius: 0px 25px;
 }
 
 .project-name ul {
@@ -687,8 +693,8 @@ small {
   text-align: center;
 }
 
-.project-name ul li:first-child{
-    font-weight: 600;
+.project-name ul li:first-child {
+  font-weight: 600;
 }
 
 .portfolio {
@@ -719,15 +725,32 @@ small {
 
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
-  transform: scale(1.2);
+  /* transform: scale(1.2);
   opacity: 0.5;
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
+  -o-transform: scale(1.2); */
+}
+
+.zip-info {
+  letter-spacing: -0.8px;
+  font-size: 18px;
+  padding: 20px;
+}
+
+.zip_item {
+  position: relative;
+}
+.zip_item:after {
+  position: absolute;
+  content: url("https://img.icons8.com/ios-filled/50/000000/play-button-circled--v5.png");
+  top: 50%;
+  left: 45%;
 }
 
 .portfolio-box-caption {
+  z-index: 2;
   color: #0a223c;
   opacity: 0;
   display: block;
@@ -798,6 +821,10 @@ small {
 /* Small Screen Devices */
 
 @media (max-width: 600px) {
+  section {
+    padding: 5em 1em;
+  }
+
   .hero-logo {
     display: none;
   }
@@ -818,7 +845,7 @@ small {
   }
 
   section.intro {
-    padding: 7.5em 2em 5em;
+    padding: 7.5em 1em 5em;
   }
 
   .resume {
@@ -846,6 +873,11 @@ small {
 
   .portfolio__item:last-child {
     margin-left: 0%;
+    width: 100%;
+  }
+  .portfolio__item:last-child.last {
+    margin-left: 0% !important;
+    border-right: 4px solid var(--clr-accent) !important;
     width: 100%;
   }
 
@@ -1249,7 +1281,7 @@ img.hover-shadow {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 20px;
   z-index: 3;
   font-size: 18px;
   border: none;
@@ -1262,6 +1294,13 @@ img.hover-shadow {
   border-radius: 2px;
   font-family: var(--ff-secondary);
   box-shadow: 0px 0px 12px 2px rgba(15, 55, 55, 0.4);
+}
+
+@media (max-width: 600px) {
+  #myBtn {
+    bottom: 10px;
+    right: 10px;
+  }
 }
 
 #myBtn:hover {
