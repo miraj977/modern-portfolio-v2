@@ -84,7 +84,7 @@
                 Hi, I am <strong>Miraj Aryal</strong>
             </h1>
             <p class="section__subtitle section__subtitle--intro">Welcome to my portfolio</p>
-            <img src="img/e.jpg" alt="a picture of miraj aryal" class="intro__img">
+            <img src="img/profile.jpg" alt="a picture of miraj aryal" class="intro__img">
             <p class="scroll-p">Scroll ▼</p>
             <p class="started">LET'S GET STARTED!!!</p>
         </section>
@@ -168,7 +168,7 @@
                 <small>PS. Apart from coding, I love to draw, listen to 90's hiphop and cook various food.</small>
             </div>
 
-            <img src="img/a.jpg" alt="Miraj leaning against the wall" class="about-me__img">
+            <img src="img/miraj.jpg" alt="Miraj leaning against the wall" class="about-me__img">
         </section>
 
         <!-- Video Player Modal -->
