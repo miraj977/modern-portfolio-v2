@@ -238,7 +238,7 @@ a:hover {
 }
 
 .nav-toggle {
-  padding: 0.5em;
+  padding: 0.5em 0;
   background: transparent;
   border: 0;
   cursor: pointer;
@@ -420,7 +420,7 @@ button.nav-toggle:active,
 .tag {
   position: absolute;
   left: 0;
-  top: 10;
+  top: 10px;
   background: var(--clr-accent);
   color: #000;
   font-size: 14px;
@@ -715,6 +715,7 @@ small {
 
 .portfolio {
   display: grid;
+  gap: 5px;
   grid-template-columns: repeat(2, minmax(278px, 1fr));
   max-width: 1200px;
   margin: 0 auto;
@@ -737,16 +738,6 @@ small {
 .portfolio__item:focus {
   position: relative;
   z-index: 2;
-}
-
-.portfolio__img:hover,
-.portfolio__item:focus .portfolio__img {
-  /* transform: scale(1.2);
-  opacity: 0.5;
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2); */
 }
 
 .zip-info {
@@ -928,7 +919,7 @@ small {
   }
 
   .about-me__body span.ps {
-    margin-top: 0.2rem;
+    margin-top: 0.5em;
   }
 
   .about-me__img {
@@ -958,6 +949,7 @@ small {
     background: var(--clr-accent);
     transition: opacity 1s ease-out;
     opacity: 1;
+    overflow: hidden;
   }
 
   .scroll-p::after {
@@ -1255,6 +1247,12 @@ img.hover-shadow {
   padding: 0;
 }
 
+@media (max-width: 769px) {
+  .social-list {
+    margin-top: 0.8em;
+  }
+}
+
 .social-list__item {
   margin: 0 0.5em;
 }
@@ -1322,8 +1320,8 @@ img.hover-shadow {
   background-color: var(--clr-accent);
   color: var(--clr-dark);
   cursor: pointer;
-  height: 35px;
-  width: 40px;
+  place-items: center;
+  padding: 2px 15px 6px;
   border-radius: 2px;
   font-family: var(--ff-secondary);
   box-shadow: 0px 0px 12px 2px rgba(15, 55, 55, 0.4);
@@ -1331,8 +1329,10 @@ img.hover-shadow {
 
 @media (max-width: 600px) {
   #myBtn {
-    bottom: 10px;
-    right: 10px;
+    bottom: 15px;
+    right: 15px;
+    font-size: 14px;
+    padding: 6px 12px;
   }
 }
 

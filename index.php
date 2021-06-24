@@ -121,23 +121,18 @@
                 <div class="service">
                     <h3>Skills</h3>
                     <ul>
-                        <li>✔ Next.js, React JS, TypeScript, Vanilla JS, jQuery, AJAX</li>
+                        <li>✔ Next.js, React, TypeScript, VanillaJS, jQuery, AJAX</li>
                         <li>✔ GraphQL, RestAPI</li>
                         <li>✔ HTML5/CSS3</li>
                         <li>✔ PHP/MySQL</li>
-                        <li>✔ Advanced WordPress, Headless CMS (WP, Contentful, Strapi.js), Firebase</li>
+                        <li>✔ Advanced WordPress, Headless CMS (WP, Contentful, Strapi.js), Webflow, Firebase</li>
                         <li>✔ Tailwind CSS, Styled Components, Material UI, SCSS, Bootstrap 5</li>
                         <li>✔ Framework: CodeIgniter, Laravel, Yii2, Express</li>
                         <li>✔ VSCode, Custom EDMs, Sketch, Figma, Atlassian Tools, Git, WAMP, MAMP, Transmit, Slack</li>
                     </ul>
                 </div>
             </div> <!-- / services -->
-            <!-- <p class="saying mx-auto mt-5 mb-0"><i>~ Learning is a continuous process. Today, we
-                    may
-                    feel like superstars,
-                    tomorrow
-                    we find out we haven’t even scratched the surface of knowledge.</i> -By a wise man</p> -->
-            <!-- <a href="#work" class="btn">My Work ↓</a> -->
+
         </section>
 
 
@@ -159,13 +154,14 @@
                     earthquake, so I took a break from Web Development to work for United Nations, a humanitarian
                     organization for a year and a half.</p>
                 <p><span>2017:</span> came to Australia to pursue my Master's degree, during which worked as a
-                    part-time Web Developer at a Travel agency and as a part-time Chef for Bondi Icebergs group.
+                    part-time Web Developer in a Travel agency and as a part-time Chef for Bondi Icebergs group.
                 </p>
                 <p><span>2019:</span> completed my studies and am currently working full-time as a <span
                         class="code">Full-Stack Developer</span>
                     in Raw Studio.</p>
                 <code>I love what I do.</code>
-                <span class="ps border-bottom-0">Apart from coding, I love to draw, listen to 90's hiphop and cook/eat
+                <span class="ps border-bottom-0">Apart from coding, I love to draw, listen to Oldschool Hiphop, cook and
+                    devour
                     various foods.</span>
             </div>
 
@@ -180,7 +176,31 @@
 
             <div class="portfolio">
 
-                <!-- Portfolio item Zip -->
+                <!-- Portfolio item Zip Blog -->
+
+                <a href="https://zip.co/blog/business" target="_blank" class="portfolio__item">
+                    <span class="tag">TypeScript, Contentful, GraphQL, Material UI</span>
+                    <img src="img/portfolio/thumbnails/zipblog.png" alt="" class="portfolio__img">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                ZIP CO Blog</div>
+                            <div class="project-name">
+                                <ul>
+                                    <li>
+                                        React with TypeScript, Headless CMS: Contentful, GraphQL, Material UI, Styled
+                                        Components
+                                    </li>
+                                    <li>
+                                        Full Frontend development and backend modules develpoment
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Portfolio item Zip Homepage -->
 
                 <a href="https://vimeo.com/562046560" data-lity class="portfolio__item zip_item">
                     <span class="tag">TypeScript, Contentful, GraphQL, Material UI</span>
@@ -188,12 +208,12 @@
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
-                                ZIP Homepage</div>
+                                ZIP CO Homepage</div>
                             <div class="project-name">
                                 <ul>
                                     <li>
                                         React with TypeScript, Headless CMS: Contentful, GraphQL, Material UI, Styled
-                                        Component
+                                        Components
                                     </li>
                                     <li class="zip-info">
                                         Homepage for logged in users. You can access it by going to https://zip.co
@@ -235,7 +255,7 @@
 
                 <!-- Portfolio item Coinspot -->
 
-                <a href="https://coinspot-edms.netlify.app/" target="_blank" class="portfolio__item">
+                <!-- <a href="https://coinspot-edms.netlify.app/" target="_blank" class="portfolio__item">
                     <span class="tag">Custom Coded EDMs</span>
                     <img src="img/portfolio/thumbnails/edm.png" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
@@ -255,11 +275,11 @@
                             </div>
                         </div>
                     </div>
-                </a>
+                </a> -->
 
                 <!-- Portfolio item Coinspot -->
 
-                <a href="https://coinspot-homepage-1.netlify.app/" target="_blank" class="portfolio__item">
+                <!-- <a href="https://coinspot-homepage-1.netlify.app/" target="_blank" class="portfolio__item">
                     <span class="tag">Bootstrap 5, SCSS</span>
                     <img src="img/portfolio/thumbnails/coinspot.png" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
@@ -279,11 +299,11 @@
                             </div>
                         </div>
                     </div>
-                </a>
+                </a> -->
 
                 <!-- Portfolio item Coinspot -->
 
-                <a href="https://coinspot-otc.netlify.app/" target="_blank" class="portfolio__item">
+                <!-- <a href="https://coinspot-otc.netlify.app/" target="_blank" class="portfolio__item">
                     <span class="tag">Bootstrap 5, SCSS</span>
                     <img src="img/portfolio/thumbnails/otc.png" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
@@ -303,7 +323,7 @@
                             </div>
                         </div>
                     </div>
-                </a>
+                </a> -->
 
                 <!-- Portfolio item Chat app -->
 

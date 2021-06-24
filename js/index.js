@@ -126,8 +126,8 @@ document.onkeydown = function ( e )
 
 $( window ).scroll( function ()
 {
-    $( this ).scrollTop() >= 100 ? $( "header" ).addClass( "scroll" ) : $( "header" ).removeClass( "scroll" );
-    $( this ).scrollTop() >= 100 ? $( ".scroll-p" ).addClass( "scroll" ) : $( ".scroll-p" ).removeClass( "scroll" );
+    $( this ).scrollTop() >= 50 ? $( "header" ).addClass( "scroll" ) : $( "header" ).removeClass( "scroll" );
+    $( this ).scrollTop() >= 40 ? $( ".scroll-p" ).addClass( "scroll" ) : $( ".scroll-p" ).removeClass( "scroll" );
 } );
 
 //Get the button:
@@ -138,7 +138,7 @@ window.onscroll = function () { scrollFunction() };
 
 function scrollFunction ()
 {
-    if ( document.body.scrollTop > 800 || document.documentElement.scrollTop > 800 )
+    if ( document.body.scrollTop > 500 || document.documentElement.scrollTop > 500 )
     {
         mybutton.style.display = "grid";
     } else
