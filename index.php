@@ -15,14 +15,19 @@
         <link rel="icon" type="image/png" href="img/fav.png">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
             integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/lity.min.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css?version=2.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide-core.min.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/themes/splide-default.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
             integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous">
+        </script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
             integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
         </script>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
     </head>
 
     <body>
@@ -655,27 +660,48 @@
             <div class="columns art">
                 <p class="placeholder-text">
                     ART (4/28)</p>
-                <div class="column">
+
+
+                <div class="splide desktop-only">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <?php for ($s = 1; $s <=28; $s++){?>
+
+                            <li class="splide__slide">
+                                <div class="column">
+                                    <img src="art/<?php echo $s;?>.jpg" style="width:100%"
+                                        onclick="openModal();currentSlide(<?php echo $s;?>)"
+                                        class="hover-shadow cursor">
+                                    <p class="hover-text">View image in fullscreen</p>
+                                </div>
+                            </li>
+
+                            <?php } ?>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="column mobile-only">
                     <img src="art/1.jpg" style="width:100%" onclick="openModal();currentSlide(1)"
                         class="hover-shadow cursor">
-                    <p class="hover-text">Click to open</p>
+                    <p class="hover-text">View image in fullscreen</p>
                 </div>
-                <div class="column">
+                <div class="column mobile-only">
                     <img src="art/2.jpg" style="width:100%" onclick="openModal();currentSlide(2)"
                         class="hover-shadow cursor">
-                    <p class="hover-text">Click to open</p>
+                    <p class="hover-text">View image in fullscreen</p>
 
                 </div>
-                <div class="column">
+                <div class="column mobile-only">
                     <img src="art/3.jpg" style="width:100%" onclick="openModal();currentSlide(3)"
                         class="hover-shadow cursor">
-                    <p class="hover-text">Click to open</p>
+                    <p class="hover-text">View image in fullscreen</p>
 
                 </div>
-                <div class="column">
+                <div class="column mobile-only">
                     <img src="art/4.jpg" style="width:100%" onclick="openModal();currentSlide(4)"
                         class="hover-shadow cursor">
-                    <p class="hover-text">Click to open</p>
+                    <p class="hover-text">View image in fullscreen</p>
 
                 </div>
             </div>
@@ -706,26 +732,74 @@
             <div class="columns food">
                 <p class="placeholder-text">
                     FOOD (4/6)</p>
+                <div class="splide splide2 desktop-only">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="column">
+                                    <img src="food/1.jpg" style="width:100%" onclick="openModals();currentSlides(1)"
+                                        class="hover-shadow cursor" alt="Food">
+                                    <p class="hover-text">View image in fullscreen</p>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="column">
+                                    <img src="food/2.jpg" style="width:100%" onclick="openModals();currentSlides(2)"
+                                        class="hover-shadow cursor">
+                                    <p class="hover-text">View image in fullscreen</p>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="column">
+                                    <img src="food/3.jpg" style="width:100%" onclick="openModals();currentSlides(3)"
+                                        class="hover-shadow cursor">
+                                    <p class="hover-text">View image in fullscreen</p>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="column">
+                                    <img src="food/4.jpg" style="width:100%" onclick="openModals();currentSlides(4)"
+                                        class="hover-shadow cursor">
+                                    <p class="hover-text">View image in fullscreen</p>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="column">
+                                    <img src="food/5.jpg" style="width:100%" onclick="openModals();currentSlides(5)"
+                                        class="hover-shadow cursor">
+                                    <p class="hover-text">View image in fullscreen</p>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="column">
+                                    <img src="food/6.jpg" style="width:100%" onclick="openModals();currentSlides(6)"
+                                        class="hover-shadow cursor">
+                                    <p class="hover-text">View image in fullscreen</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-                <div class="column">
+                <div class="column mobile-only">
                     <img src="food/1.jpg" style="width:100%" onclick="openModals();currentSlides(1)"
                         class="hover-shadow cursor" alt="Food">
-                    <p class="hover-text">Click to open</p>
+                    <p class="hover-text">View image in fullscreen</p>
                 </div>
-                <div class="column">
+                <div class="column mobile-only">
                     <img src="food/2.jpg" style="width:100%" onclick="openModals();currentSlides(2)"
                         class="hover-shadow cursor">
-                    <p class="hover-text">Click to open</p>
+                    <p class="hover-text">View image in fullscreen</p>
                 </div>
-                <div class="column">
+                <div class="column mobile-only">
                     <img src="food/3.jpg" style="width:100%" onclick="openModals();currentSlides(3)"
                         class="hover-shadow cursor">
-                    <p class="hover-text">Click to open</p>
+                    <p class="hover-text">View image in fullscreen</p>
                 </div>
-                <div class="column">
+                <div class="column mobile-only">
                     <img src="food/4.jpg" style="width:100%" onclick="openModals();currentSlides(4)"
                         class="hover-shadow cursor">
-                    <p class="hover-text">Click to open</p>
+                    <p class="hover-text">View image in fullscreen</p>
                 </div>
             </div>
 
@@ -782,8 +856,7 @@
             </ul>
         </footer>
 
-        <script src="js/index.js"></script>
-        <script src="js/lity.min.js"></script>
+        <script src="js/index.js?version=1.0"></script>
 
     </body>
 

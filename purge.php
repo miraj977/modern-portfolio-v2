@@ -1,5 +1,5 @@
 <?php
-include 'constants.php';
+include 'const/constants.php';
 
 try {
         $head = [];
@@ -25,3 +25,10 @@ try {
 catch(Exception $e) {
   print($e);
 }
+?>
+
+<script type="text/javascript">
+setTimeout(function() {
+    window.location.href = "/";
+}, 3000);
+</script>

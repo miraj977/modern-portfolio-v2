@@ -162,3 +162,29 @@ if ( child % 2 != 0 )
 {
     $( '.portfolio__item:last-child' ).addClass( 'last' );
 }
+
+
+
+
+document.addEventListener( 'DOMContentLoaded', function ()
+{
+    new Splide( '.splide', {
+        type: 'loop',
+        focus: 'start',
+        perPage: 4,
+        rewind: true,
+        perMove: 1,
+        pagination: false,
+        pauseOnHover: false
+    } ).mount();
+
+    new Splide( '.splide2', {
+        type: 'loop',
+        focus: 'start',
+        perPage: 4,
+        rewind: true,
+        perMove: 1,
+        pagination: false,
+        pauseOnHover: false
+    } ).mount();
+} );
