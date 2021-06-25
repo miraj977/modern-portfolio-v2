@@ -5,6 +5,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
         <title>Miraj Aryal</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
@@ -837,13 +840,13 @@
             </a>
             <ul class="social-list">
                 <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/miraj977" target="_blank">
-                        <i class="fab fa-github"></i>
+                    <a class="social-list__link" href="https://linkedin.com/in/mirajaryal" target="_blank">
+                        <i class="fab fa-linkedin"></i>
                     </a>
                 </li>
                 <li class="social-list__item">
-                    <a class="social-list__link" href="https://linkedin.com/in/mirajaryal" target="_blank">
-                        <i class="fab fa-linkedin"></i>
+                    <a class="social-list__link" href="https://github.com/miraj977" target="_blank">
+                        <i class="fab fa-github"></i>
                     </a>
                 </li>
                 <li class="social-list__item">
