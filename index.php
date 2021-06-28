@@ -2,45 +2,57 @@
 <html lang="en">
 
     <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-        <meta http-equiv="Pragma" content="no-cache" />
-        <meta http-equiv="Expires" content="0" />
+        <meta name="description"
+            content="Welcome to my portfolio. I am Miraj, a Full-Stack Developer and I turn your ideas into reality.">
+        <meta name="robots" content="index, follow" />
+        <meta name="google-site-verification" content="MtUR7vw36AYXYqQNFOXfge5_e5ugu2o5kC83nkoHErY" />
+        <meta name="keywords" content="Miraj Aryal, Miraj, mirajaryal">
         <title>Miraj Aryal</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-            integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+        <link rel="canonical" href="https://mirajaryal.me/" />
+        <link rel="icon" type="image/png" href="img/fav.png">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"
+            integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" async />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css"
+            integrity="sha512-apX8rFN/KxJW8rniQbkvzrshQ3KvyEH+4szT3Sno5svdr6E/CP0QE862yEeLBMUnCqLko8QaugGkzvWS7uNfFQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" async />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
             href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
-            rel="stylesheet">
-        <link rel="icon" type="image/png" href="img/fav.png">
+            rel="stylesheet" async>
+
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css?version=2.0.0.2">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide-core.min.css">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/themes/splide-default.min.css">
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"
+            async>
+        <link rel="stylesheet" href="css/style.css?version=<?php echo date("YmdHis");?>">
+        <!-- Required for ZIP video lightbox -->
+        <link rel="stylesheet" href="css/lity.min.css">
 
-
-        <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-            integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-            crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css"
+            media="screen and (min-width: 768px)">
     </head>
 
-    <body>
+    <body class="light">
         <header>
             <div class="logo">
                 <a href="#" onclick="topFunction()">/dev-miraj</a>
             </div>
+
+            <div class="toggle-switch">
+                <span>
+                    <label class="switch">
+                        <input id="theme-switch" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </span>
+                <span class="theme-tooltip">Switch theme here</span>
+
+            </div>
+
             <a class="resume" data-toggle="modal" data-target="#ModalPDF" target="_blank"><span>Resume</span></a>
 
             <button class="nav-toggle" aria-label="toggle navigation">
@@ -88,10 +100,11 @@
             <h1 class="section__title section__title--intro">
                 Hi, I am <strong>Miraj Aryal</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">Welcome to my portfolio</p>
-            <img src="img/profile.jpg" alt="a picture of miraj aryal" class="intro__img">
+            <h1 class="section__subtitle section__subtitle--intro">Welcome to my portfolio</h1>
+            <p class="started-top">LET'S GET STARTED!!!</p>
+            <img src="img/profile.webp" alt="a picture of miraj aryal" class="intro__img">
             <p class="scroll-p">Scroll ▼</p>
-            <p class="started">LET'S GET STARTED!!!</p>
+            <!-- <p class="started">LET'S GET STARTED!!!</p> -->
         </section>
 
         <!-- My services -->
@@ -126,7 +139,7 @@
                     <p class="sm"><span>PHP Developer</span> <a href="https://imaginewebsolution.com" target="_blank">
                             Imagine Web Solution</a>, Nepal (2014 - 15)</p>
                     <br>
-                    <p class="sm"> <span>Key Clients:</span> Zip.co, Coinspot, New South Homes, UNSW</p>
+                    <p class="sm"> <span>Key Clients:</span> Zip Co, Coinspot, New South Homes, UNSW</p>
                 </div>
 
                 <div class="service">
@@ -143,9 +156,7 @@
                     </ul>
                 </div>
             </div> <!-- / services -->
-
         </section>
-
 
         <!-- About me -->
 
@@ -154,29 +165,49 @@
             <p class="section__subtitle section__subtitle--about">full-stack dev, chef, artist</p>
 
             <div class="about-me__body">
-                <p>Learning is a continuous process. Today, we
-                    may
-                    feel like superstars,
-                    tomorrow
-                    we find out we haven’t even scratched the surface of knowledge.</p>
-                <p><span>2014:</span> started as an entry-level programmer, learned
-                    HTML, CSS, PHP/MySQL, frameworks CodeIgniter, Yii2 and Laravel.</p>
-                <p><span>2015:</span> sadly Nepal was hit by a massive
-                    earthquake, so I took a break from Web Development to work for United Nations, a humanitarian
-                    organization for a year and a half.</p>
-                <p><span>2017:</span> came to Australia to pursue my Master's degree, during which worked as a
-                    part-time Web Developer in a Travel agency and as a part-time Chef for Bondi Icebergs group.
-                </p>
-                <p><span>2019:</span> completed my studies and am currently working full-time as a <span
-                        class="code">Full-Stack Developer</span>
-                    in Raw Studio.</p>
-                <code>I love what I do.</code>
-                <span class="ps border-bottom-0">Apart from coding, I love to draw, listen to Oldschool Hiphop, cook and
-                    devour
-                    various foods.</span>
+
+                <div class="box">
+                    <ul id="first-list">
+                        <li>
+                            <span class="code"></span>
+                            <div class="info">Started as an entry-level programmer, learned
+                                HTML, CSS, PHP/MySQL, frameworks CodeIgniter, Yii2 and Laravel.</div>
+                            <div class="time">
+                                <span>2014</span>
+                                <span></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span></span>
+                            <div class="info">Took a break from Web development to work for a humanitarian organization
+                                United Nations after mega earthquake hit Nepal in 2015.</div>
+                            <div class="time">
+                                <span>2015</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span></span>
+                            <div class="info">Flew to Down Under to pursue my Master's degree. Meanwhile worked
+                                part-time as a Web Developer for a Travel agency and casual Chef for Bondi Icebergs
+                                Group.</div>
+                            <div class="time">
+                                <span>2017</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span></span>
+                            <div class="info">Graduated and started working as a Full-Stack Developer, challenging my
+                                limits with my passion.</div>
+                            <div class="time">
+                                <span>2019..</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
 
-            <img src="img/miraj.jpg" alt="Miraj leaning against the wall" class="about-me__img">
+            <img src="img/miraj.webp" alt="Miraj leaning against the wall" class="about-me__img">
         </section>
 
         <!-- My Work -->
@@ -191,7 +222,7 @@
 
                 <a href="https://zip.co/blog/business" target="_blank" class="portfolio__item">
                     <span class="tag">TypeScript, Contentful, GraphQL, Material UI</span>
-                    <img src="img/portfolio/thumbnails/zipblog.png" alt="" class="portfolio__img">
+                    <img src="img/portfolio/thumbnails/zipblog.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -215,7 +246,7 @@
 
                 <a href="https://vimeo.com/562046560" data-lity class="portfolio__item zip_item">
                     <span class="tag">TypeScript, Contentful, GraphQL, Material UI</span>
-                    <img src="img/portfolio/thumbnails/zip.png" alt="" class="portfolio__img">
+                    <img src="img/portfolio/thumbnails/zip.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -243,7 +274,7 @@
 
                 <a href="https://raw.studio/why-choose-us" target="_blank" class="portfolio__item">
                     <span class="tag">Advanced WordPress, ACF, Tailwind CSS</span>
-                    <img src="img/portfolio/thumbnails/raw.png" alt="" class="portfolio__img">
+                    <img src="img/portfolio/thumbnails/raw.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -268,7 +299,7 @@
 
                 <!-- <a href="https://coinspot-edms.netlify.app/" target="_blank" class="portfolio__item">
                     <span class="tag">Custom Coded EDMs</span>
-                    <img src="img/portfolio/thumbnails/edm.png" alt="" class="portfolio__img">
+                    <img src="img/portfolio/thumbnails/edm.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -292,7 +323,7 @@
 
                 <!-- <a href="https://coinspot-homepage-1.netlify.app/" target="_blank" class="portfolio__item">
                     <span class="tag">Bootstrap 5, SCSS</span>
-                    <img src="img/portfolio/thumbnails/coinspot.png" alt="" class="portfolio__img">
+                    <img src="img/portfolio/thumbnails/coinspot.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -316,7 +347,7 @@
 
                 <!-- <a href="https://coinspot-otc.netlify.app/" target="_blank" class="portfolio__item">
                     <span class="tag">Bootstrap 5, SCSS</span>
-                    <img src="img/portfolio/thumbnails/otc.png" alt="" class="portfolio__img">
+                    <img src="img/portfolio/thumbnails/otc.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -340,7 +371,7 @@
 
                 <a href="https://chatapp-five.vercel.app/" target="_blank" class="portfolio__item">
                     <span class="tag">Next.js, Firebase, Styled Components, MUI</span>
-                    <img src="img/portfolio/thumbnails/whatsapp.png" alt="" class="portfolio__img">
+                    <img src="img/portfolio/thumbnails/whatsapp.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -365,7 +396,7 @@
 
                 <a href="https://react-web1.netlify.app/" target="_blank" class="portfolio__item">
                     <span class="tag">ReactJS (In Progress)</span>
-                    <img src="img/portfolio/thumbnails/10.png" alt="" class="portfolio__img">
+                    <img src="img/portfolio/thumbnails/10.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -389,7 +420,7 @@
 
                 <a href="https://newsouthhomes.com.au" target="_blank" class="portfolio__item">
                     <span class="tag">Advanced WordPress</span>
-                    <img src="img/portfolio/thumbnails/3.jpg" alt="" class="portfolio__img">
+                    <img src="img/portfolio/thumbnails/12.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -415,7 +446,7 @@
 
                 <a href="https://staging.pictura.com.au/stopc" target="_blank" class="portfolio__item">
                     <span class="tag">Advanced WordPress</span>
-                    <img src="img/portfolio/thumbnails/9.png" alt="" class="portfolio__img">
+                    <img src="img/portfolio/thumbnails/9.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -437,37 +468,11 @@
                     </div>
                 </a>
 
-                <!-- Portfolio item Antenna Central -->
-
-                <a href="https://antennacentral.com.au" target="_blank" class="portfolio__item">
-                    <span class="tag">Advanced WordPress</span>
-                    <img src="img/portfolio/thumbnails/1-2.png" alt="" class="portfolio__img">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Antenna Central Pty Ltd
-                            </div>
-                            <div class="project-name">
-                                <ul>
-                                    <li>
-                                        Advanced WordPress (Advanced Custom Field), HTML/CSS, jQuery
-                                    </li>
-                                    <li>
-                                        No page builder used. Custom theme and custom backend developed using Advanced
-                                        Custom Field. (ACF)
-                                    </li>
-                                    <li><b>Contribution: Full Development</b></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
                 <!-- Portfolio item SGB -->
 
                 <a href="https://sgbmaintenance.com.au" target="_blank" class="portfolio__item">
                     <span class="tag">Advanced WordPress</span>
-                    <img src="img/portfolio/thumbnails/sgb.png" alt="" class="portfolio__img">
+                    <img src="img/portfolio/thumbnails/sgb.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -493,7 +498,7 @@
 
                 <a href="https://lanternelectrical.com.au/" target="_blank" class="portfolio__item">
                     <span class="tag">Advanced WordPress</span>
-                    <img src="img/portfolio/thumbnails/2.jpg" alt="" class="portfolio__img">
+                    <img src="img/portfolio/thumbnails/11.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -519,7 +524,7 @@
 
                 <a href="https://www.ruggedtrailsnepal.com/" target="_blank" class="portfolio__item">
                     <span class="tag">CodeIgniter PHP</span>
-                    <img src="img/portfolio/thumbnails/4.png" alt="" class="portfolio__img">
+                    <img src="img/portfolio/thumbnails/4.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -538,7 +543,7 @@
 
                 <a href="https://www.babuadventure.com/" target="_blank" class="portfolio__item">
                     <span class="tag">CodeIgniter PHP</span>
-                    <img src="img/portfolio/thumbnails/6.png" alt="" class="portfolio__img">
+                    <img src="img/portfolio/thumbnails/6.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -553,11 +558,38 @@
                     </div>
                 </a>
 
+
+                <!-- Portfolio item Antenna Central -->
+
+                <a href="https://antennacentral.com.au" target="_blank" class="portfolio__item">
+                    <span class="tag">Advanced WordPress</span>
+                    <img src="img/portfolio/thumbnails/1-2.webp" alt="" class="portfolio__img">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Antenna Central Pty Ltd
+                            </div>
+                            <div class="project-name">
+                                <ul>
+                                    <li>
+                                        Advanced WordPress (Advanced Custom Field), HTML/CSS, jQuery
+                                    </li>
+                                    <li>
+                                        No page builder used. Custom theme and custom backend developed using Advanced
+                                        Custom Field. (ACF)
+                                    </li>
+                                    <li><b>Contribution: Full Development</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
                 <!-- Portfolio item Job Base -->
 
                 <a href="http://jobbase.epizy.com/web/" target="_blank" class="portfolio__item">
                     <span class="tag">Yii2 PHP</span>
-                    <img src="img//portfolio/thumbnails/7.png" alt="" class="portfolio__img">
+                    <img src="img//portfolio/thumbnails/7.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -575,7 +607,7 @@
 
                 <a href="http://bookingmanage.epizy.com/" target="_blank" class="portfolio__item">
                     <span class="tag">Core PHP</span>
-                    <img src="img//portfolio/thumbnails/1.png" alt="" class="portfolio__img">
+                    <img src="img//portfolio/thumbnails/1.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -593,7 +625,7 @@
                 <a href="http://eventmanage.epizy.com" target="_blank" class="portfolio__item">
                     <span class="tag">Core PHP</span>
 
-                    <img src="img/portfolio/thumbnails/2.png" alt="" class="portfolio__img">
+                    <img src="img/portfolio/thumbnails/2.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -610,7 +642,7 @@
 
                 <a href="http://www.loyalpartners.epizy.com/" target="_blank" class="portfolio__item">
                     <span class="tag">Core PHP</span>
-                    <img src="img/portfolio/thumbnails/3.png" alt="" class="portfolio__img">
+                    <img src="img/portfolio/thumbnails/3.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -627,7 +659,7 @@
 
                 <a href="http://eventforum.epizy.com/" target="_blank" class="portfolio__item">
                     <span class="tag">Core PHP</span>
-                    <img src="img/portfolio/thumbnails/5.png" alt="" class="portfolio__img">
+                    <img src="img/portfolio/thumbnails/5.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -640,23 +672,10 @@
                     </div>
                 </a>
 
-                <!-- Portfolio item Portfolio-->
-
-                <a href="https://miraj977.github.io/scss-portfolio/index.html" target="_blank" class="portfolio__item">
-                    <span class="tag">HTML/ SCSS</span>
-                    <img src="img/portfolio/thumbnails/8.png" alt="" class="portfolio__img">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                My Portfolio Demo (SCSS)
-                            </div>
-                            <div class="project-name">
-                                HTML, CSS compiled by SCSS
-                            </div>
-                        </div>
-                    </div>
-                </a>
             </div>
+
+            <a class="toggleBtn" id="toggleBtn" href="!#">View more</a>
+            <div class="arrow"></div>
         </section>
 
         <section id="hobbies" class="my-work hobbies">
@@ -675,7 +694,7 @@
 
                             <li class="splide__slide">
                                 <div class="column">
-                                    <img src="art/<?php echo $s;?>.jpg" style="width:100%"
+                                    <img src="art/<?php echo $s;?>-min.webp" style="width:100%"
                                         onclick="openModal();currentSlide(<?php echo $s;?>)"
                                         class="hover-shadow cursor">
                                     <p class="hover-text">View image in fullscreen</p>
@@ -688,25 +707,25 @@
                 </div>
 
                 <div class="column mobile-only">
-                    <img src="art/1.jpg" style="width:100%" onclick="openModal();currentSlide(1)"
-                        class="hover-shadow cursor">
+                    <img src="art/1-min.webp" style="width:100%" onclick="openModal();currentSlide(1)"
+                        class="hover-shadow cursor" alt="Art of Miraj">
                     <p class="hover-text">View image in fullscreen</p>
                 </div>
                 <div class="column mobile-only">
-                    <img src="art/2.jpg" style="width:100%" onclick="openModal();currentSlide(2)"
-                        class="hover-shadow cursor">
-                    <p class="hover-text">View image in fullscreen</p>
-
-                </div>
-                <div class="column mobile-only">
-                    <img src="art/3.jpg" style="width:100%" onclick="openModal();currentSlide(3)"
-                        class="hover-shadow cursor">
+                    <img src="art/2-min.webp" style="width:100%" onclick="openModal();currentSlide(2)"
+                        class="hover-shadow cursor" alt="Art of Miraj">
                     <p class="hover-text">View image in fullscreen</p>
 
                 </div>
                 <div class="column mobile-only">
-                    <img src="art/4.jpg" style="width:100%" onclick="openModal();currentSlide(4)"
-                        class="hover-shadow cursor">
+                    <img src="art/3-min.webp" style="width:100%" onclick="openModal();currentSlide(3)"
+                        class="hover-shadow cursor" alt="Art of Miraj">
+                    <p class="hover-text">View image in fullscreen</p>
+
+                </div>
+                <div class="column mobile-only">
+                    <img src="art/4-min.webp" style="width:100%" onclick="openModal();currentSlide(4)"
+                        class="hover-shadow cursor" alt="Art of Miraj">
                     <p class="hover-text">View image in fullscreen</p>
 
                 </div>
@@ -720,7 +739,7 @@
 
                     <div class="mySlides">
                         <div class="numbertext"><?php echo $i;?> / 28</div>
-                        <img src="art/<?php echo $i;?>.jpg" class="artimg">
+                        <img src="art/<?php echo $i;?>-min.webp" class="artimg" alt="Art of Miraj">
                     </div>
                     <?php }?>
 
@@ -743,43 +762,43 @@
                         <ul class="splide__list">
                             <li class="splide__slide">
                                 <div class="column">
-                                    <img src="food/1.jpg" style="width:100%" onclick="openModals();currentSlides(1)"
+                                    <img src="food/1.webp" style="width:100%" onclick="openModals();currentSlides(1)"
                                         class="hover-shadow cursor" alt="Food">
                                     <p class="hover-text">View image in fullscreen</p>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="column">
-                                    <img src="food/2.jpg" style="width:100%" onclick="openModals();currentSlides(2)"
+                                    <img src="food/2.webp" style="width:100%" onclick="openModals();currentSlides(2)"
                                         class="hover-shadow cursor">
                                     <p class="hover-text">View image in fullscreen</p>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="column">
-                                    <img src="food/3.jpg" style="width:100%" onclick="openModals();currentSlides(3)"
-                                        class="hover-shadow cursor">
+                                    <img src="food/3.webp" style="width:100%" onclick="openModals();currentSlides(3)"
+                                        class="hover-shadow cursor" alt="Food by Miraj">
                                     <p class="hover-text">View image in fullscreen</p>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="column">
-                                    <img src="food/4.jpg" style="width:100%" onclick="openModals();currentSlides(4)"
-                                        class="hover-shadow cursor">
+                                    <img src="food/4.webp" style="width:100%" onclick="openModals();currentSlides(4)"
+                                        class="hover-shadow cursor" alt="Food by Miraj">
                                     <p class="hover-text">View image in fullscreen</p>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="column">
-                                    <img src="food/5.jpg" style="width:100%" onclick="openModals();currentSlides(5)"
-                                        class="hover-shadow cursor">
+                                    <img src="food/5.webp" style="width:100%" onclick="openModals();currentSlides(5)"
+                                        class="hover-shadow cursor" alt="Food by Miraj">
                                     <p class="hover-text">View image in fullscreen</p>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="column">
-                                    <img src="food/6.jpg" style="width:100%" onclick="openModals();currentSlides(6)"
-                                        class="hover-shadow cursor">
+                                    <img src="food/6.webp" style="width:100%" onclick="openModals();currentSlides(6)"
+                                        class="hover-shadow cursor" alt="Food by Miraj">
                                     <p class="hover-text">View image in fullscreen</p>
                                 </div>
                             </li>
@@ -788,23 +807,23 @@
                 </div>
 
                 <div class="column mobile-only">
-                    <img src="food/1.jpg" style="width:100%" onclick="openModals();currentSlides(1)"
+                    <img src="food/1.webp" style="width:100%" onclick="openModals();currentSlides(1)"
                         class="hover-shadow cursor" alt="Food">
                     <p class="hover-text">View image in fullscreen</p>
                 </div>
                 <div class="column mobile-only">
-                    <img src="food/2.jpg" style="width:100%" onclick="openModals();currentSlides(2)"
-                        class="hover-shadow cursor">
+                    <img src="food/2.webp" style="width:100%" onclick="openModals();currentSlides(2)"
+                        class="hover-shadow cursor" alt="Food by Miraj">
                     <p class="hover-text">View image in fullscreen</p>
                 </div>
                 <div class="column mobile-only">
-                    <img src="food/3.jpg" style="width:100%" onclick="openModals();currentSlides(3)"
-                        class="hover-shadow cursor">
+                    <img src="food/3.webp" style="width:100%" onclick="openModals();currentSlides(3)"
+                        class="hover-shadow cursor" alt="Food by Miraj">
                     <p class="hover-text">View image in fullscreen</p>
                 </div>
                 <div class="column mobile-only">
-                    <img src="food/4.jpg" style="width:100%" onclick="openModals();currentSlides(4)"
-                        class="hover-shadow cursor">
+                    <img src="food/4.webp" style="width:100%" onclick="openModals();currentSlides(4)"
+                        class="hover-shadow cursor" alt="Food by Miraj">
                     <p class="hover-text">View image in fullscreen</p>
                 </div>
             </div>
@@ -816,7 +835,7 @@
 
                     <div class="mySlide" style="background-color:#2b2828 !important;">
                         <div class="numbertext"><?php echo $i ?> / 6</div>
-                        <img src="food/<?php echo $i;?>.jpg" class="artimg">
+                        <img src="food/<?php echo $i;?>.webp" class="artimg" alt="Food by Miraj">
                     </div>
                     <?php } ?>
 
@@ -861,8 +880,28 @@
                 </li>
             </ul>
         </footer>
+        <div class="loader">
+            <img alt="Loading Animation" width="350" height="auto"
+                srcset="img/loader.gif 300w, img/loader.gif 400w, img/loader.gif 600w, img/loader.gif 800w"
+                src="img/loader.gif"
+                sizes="(max-width: 919px) 100vw, (min-width: 920px) and (max-width: 1200px) 74vw, 1172px" rel="preload"
+                as="image">
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+            integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+            crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js">
+        </script>
 
         <script src="js/index.js?version=1.0"></script>
+        <!-- Required for ZIP video lightbox -->
+        <script src="js/lity.min.js"></script>
 
     </body>
 
