@@ -5,10 +5,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description"
-            content="Welcome to my portfolio. I am Miraj, a Full-Stack Developer and I turn your ideas into reality.">
+            content="Welcome to my portfolio. I am Miraj, a Full-Stack Developer and I turn your ideas into reality.
+            Miraj Aryal | Sydney, New South Wales, Australia | Full Stack Developer | Software Engineer | PHP | React | Nextjs | GraphQL | Advanced WordPress | Contentful | SASS">
         <meta name="robots" content="index, follow" />
         <meta name="google-site-verification" content="MtUR7vw36AYXYqQNFOXfge5_e5ugu2o5kC83nkoHErY" />
-        <meta name="keywords" content="Miraj Aryal, Miraj, mirajaryal">
+        <meta name="keywords" content="Miraj Aryal, Miraj, mirajaryal, aryal, aryalmiraj miraj aryal">
         <title>Miraj Aryal</title>
         <link rel="canonical" href="https://mirajaryal.me/" />
         <link rel="icon" type="image/png" href="img/fav.png">
@@ -78,6 +79,7 @@
                 <div class="modal-content">
                     <!--Footer-->
                     <div class="modal-footer justify-content-end">
+                        <!-- if changing filename, change the filename in JS too -->
                         <a type="button" class="btn download btn-warning" href="file/Miraj Aryal Resume 2021.pdf"
                             target="_blank">Download</a>
                         <a type="button" class="btn btn-close" data-dismiss="modal">Close <span aria-hidden="true"
@@ -756,7 +758,7 @@
 
             <div class="columns food">
                 <p class="placeholder-text">
-                    FOOD (4/6)</p>
+                    FOOD (4/5)</p>
                 <div class="splide splide2 desktop-only">
                     <div class="splide__track">
                         <ul class="splide__list">
@@ -795,13 +797,6 @@
                                     <p class="hover-text">View image in fullscreen</p>
                                 </div>
                             </li>
-                            <li class="splide__slide">
-                                <div class="column">
-                                    <img src="food/6.webp" style="width:100%" onclick="openModals();currentSlides(6)"
-                                        class="hover-shadow cursor" alt="Food by Miraj">
-                                    <p class="hover-text">View image in fullscreen</p>
-                                </div>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -831,7 +826,7 @@
             <div id="myModals" class="modal">
                 <div class="modal-content">
                     <span class="close cursor" onclick="closeModals()">&times;</span>
-                    <?php for($i = 1; $i <= 6; $i++) {?>
+                    <?php for($i = 1; $i <= 5; $i++) {?>
 
                     <div class="mySlide" style="background-color:#2b2828 !important;">
                         <div class="numbertext"><?php echo $i ?> / 6</div>
@@ -881,11 +876,17 @@
             </ul>
         </footer>
         <div class="loader">
-            <img alt="Loading Animation" width="350" height="auto"
-                srcset="img/loader.gif 300w, img/loader.gif 400w, img/loader.gif 600w, img/loader.gif 800w"
-                src="img/loader.gif"
-                sizes="(max-width: 919px) 100vw, (min-width: 920px) and (max-width: 1200px) 74vw, 1172px" rel="preload"
-                as="image">
+            <div class='triangles'>
+                <div class='tri invert'></div>
+                <div class='tri invert'></div>
+                <div class='tri'></div>
+                <div class='tri invert'></div>
+                <div class='tri invert'></div>
+                <div class='tri'></div>
+                <div class='tri invert'></div>
+                <div class='tri'></div>
+                <div class='tri invert'></div>
+            </div>
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"

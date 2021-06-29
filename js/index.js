@@ -132,11 +132,11 @@ $( window ).scroll( function ()
     if ( $( 'body' ).hasClass( "scroll" ) && window.innerWidth < 600 )
     {
         $( '.section__subtitle--intro' ).hide();
-        $( '.started-top' ).show();
+        $( '.started-top' ).css( 'display', 'flex' );
     } else
     {
         $( '.section__subtitle--intro' ).show();
-        $( '.started-top' ).hide();
+        $( '.started-top' ).css( 'display', 'none' );
     }
 
     $( this ).scrollTop() >= 600 ? $( '#home' ).css( 'opacity', 0 ) : $( '#home' ).css( 'opacity', 1 );
@@ -282,3 +282,12 @@ home.css( 'position', 'sticky' );
 //Hide tooltip after 5s of DOM loading
 
 setTimeout( function () { tooltip.hide( 'slow' ); }, 4000 );
+
+// Disable resume modal view on mobile
+
+if ( window.innerWidth < 600 )
+{
+    $( '.resume' ).removeAttr( 'data-toggle' );
+    $( '.resume' ).removeAttr( 'data-target' );
+    $( '.resume' ).attr( 'href', 'file/Miraj Aryal Resume 2021.pdf' );
+}
