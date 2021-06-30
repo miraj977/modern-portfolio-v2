@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /index.php
+Disallow: /file/
+Sitemap: https://mirajaryal.me/sitemap.xml

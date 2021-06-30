@@ -400,6 +400,10 @@ button.nav-toggle:active,
   color: rgb(202, 86, 19);
 }
 
+.btn-close:focus {
+  outline: none;
+}
+
 /*  Intro section  */
 
 #home {

@@ -29,9 +29,10 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
             integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"
             async>
-        <link rel="stylesheet" href="css/style.css?version=<?php echo date("YmdHis");?>">
+        <link rel="stylesheet" href="css/style.css?version=<?php echo date("YmdHis");?>" media="all">
+
         <!-- Required for ZIP video lightbox -->
-        <link rel="stylesheet" href="css/lity.min.css">
+        <link rel="stylesheet" href="css/lity.min.css" media="all">
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css"
             media="screen and (min-width: 768px)">
@@ -45,8 +46,8 @@
 
             <div class="toggle-switch">
                 <span>
-                    <label class="switch">
-                        <input id="theme-switch" type="checkbox">
+                    <label class="switch" for="theme-switch">
+                        <input id="theme-switch" type="checkbox" aria-label="theme-switch" name="theme-switch">
                         <span class="slider round"></span>
                     </label>
                 </span>
@@ -82,8 +83,8 @@
                         <!-- if changing filename, change the filename in JS too -->
                         <a type="button" class="btn download btn-warning" href="file/Miraj Aryal Resume 2021.pdf"
                             target="_blank">Download</a>
-                        <a type="button" class="btn btn-close" data-dismiss="modal">Close <span aria-hidden="true"
-                                class="white-text">&times;</span></a>
+                        <a href="#" type="button" class="btn btn-close" data-dismiss="modal">Close
+                            <span aria-hidden="true" class="white-text">&times;</span></a>
                     </div>
                     <!--Body-->
                     <div class="modal-body">
@@ -131,14 +132,16 @@
 
                 <div class="service work">
                     <h3>Work</h3>
-                    <p class="sm"><span>Full-Stack Developer</span><a href="https://raw.studio" target="_blank">Raw
+                    <p class="sm"><span>Full-Stack Developer</span><a href="https://raw.studio" target="_blank"
+                            rel="noopener noreferrer">Raw
                             Studio</a>, AU (2021 - Present)</p>
                     <p class="sm"><span>Full-Stack Developer</span><a href="https://picturacreative.com.au"
-                            target="_blank">Pictura Creative</a>, AU (2020 - 2021)</p>
-                    <p class="sm"><span>Web Developer</span><a href="https://everestviewtravels.com.au/"
-                            target="_blank"> Everest View Travel &
+                            target="_blank" rel="noopener noreferrer">Pictura Creative</a>, AU (2020 - 2021)</p>
+                    <p class="sm"><span>Web Developer</span><a href="https://everestviewtravels.com.au/" target="_blank"
+                            rel="noopener noreferrer"> Everest View Travel &
                             Tours</a>, AU (2017 - 19)</p>
-                    <p class="sm"><span>PHP Developer</span> <a href="https://imaginewebsolution.com" target="_blank">
+                    <p class="sm"><span>PHP Developer</span> <a href="https://imaginewebsolution.com" target="_blank"
+                            rel="noopener noreferrer">
                             Imagine Web Solution</a>, Nepal (2014 - 15)</p>
                     <br>
                     <p class="sm"> <span>Key Clients:</span> Zip Co, Coinspot, New South Homes, UNSW</p>
@@ -222,7 +225,8 @@
 
                 <!-- Portfolio item Zip Blog -->
 
-                <a href="https://zip.co/blog/business" target="_blank" class="portfolio__item">
+                <a href="https://zip.co/blog/business" rel="noopener noreferrer" target="_blank"
+                    class="portfolio__item">
                     <span class="tag">TypeScript, Contentful, GraphQL, Material UI</span>
                     <img src="img/portfolio/thumbnails/zipblog.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
@@ -274,7 +278,8 @@
 
                 <!-- Portfolio item RAW -->
 
-                <a href="https://raw.studio/why-choose-us" target="_blank" class="portfolio__item">
+                <a href="https://raw.studio/why-choose-us" rel="noopener noreferrer" target="_blank"
+                    class="portfolio__item">
                     <span class="tag">Advanced WordPress, ACF, Tailwind CSS</span>
                     <img src="img/portfolio/thumbnails/raw.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
@@ -299,7 +304,7 @@
 
                 <!-- Portfolio item Coinspot -->
 
-                <!-- <a href="https://coinspot-edms.netlify.app/" target="_blank" class="portfolio__item">
+                <!-- <a href="https://coinspot-edms.netlify.app/" rel="noopener noreferrer" target="_blank" class="portfolio__item">
                     <span class="tag">Custom Coded EDMs</span>
                     <img src="img/portfolio/thumbnails/edm.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
@@ -323,7 +328,7 @@
 
                 <!-- Portfolio item Coinspot -->
 
-                <!-- <a href="https://coinspot-homepage-1.netlify.app/" target="_blank" class="portfolio__item">
+                <!-- <a href="https://coinspot-homepage-1.netlify.app/" rel="noopener noreferrer" target="_blank" class="portfolio__item">
                     <span class="tag">Bootstrap 5, SCSS</span>
                     <img src="img/portfolio/thumbnails/coinspot.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
@@ -347,7 +352,7 @@
 
                 <!-- Portfolio item Coinspot -->
 
-                <!-- <a href="https://coinspot-otc.netlify.app/" target="_blank" class="portfolio__item">
+                <!-- <a href="https://coinspot-otc.netlify.app/" rel="noopener noreferrer" target="_blank" class="portfolio__item">
                     <span class="tag">Bootstrap 5, SCSS</span>
                     <img src="img/portfolio/thumbnails/otc.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
@@ -371,7 +376,8 @@
 
                 <!-- Portfolio item Chat app -->
 
-                <a href="https://chatapp-five.vercel.app/" target="_blank" class="portfolio__item">
+                <a href="https://chatapp-five.vercel.app/" rel="noopener noreferrer" target="_blank"
+                    class="portfolio__item">
                     <span class="tag">Next.js, Firebase, Styled Components, MUI</span>
                     <img src="img/portfolio/thumbnails/whatsapp.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
@@ -396,7 +402,8 @@
 
                 <!-- Portfolio item Trvl -->
 
-                <a href="https://react-web1.netlify.app/" target="_blank" class="portfolio__item">
+                <a href="https://react-web1.netlify.app/" rel="noopener noreferrer" target="_blank"
+                    class="portfolio__item">
                     <span class="tag">ReactJS (In Progress)</span>
                     <img src="img/portfolio/thumbnails/10.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
@@ -420,7 +427,8 @@
 
                 <!-- Portfolio item NSH -->
 
-                <a href="https://newsouthhomes.com.au" target="_blank" class="portfolio__item">
+                <a href="https://newsouthhomes.com.au" rel="noopener noreferrer" target="_blank"
+                    class="portfolio__item">
                     <span class="tag">Advanced WordPress</span>
                     <img src="img/portfolio/thumbnails/12.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
@@ -446,7 +454,8 @@
 
                 <!-- Portfolio item STOPC -->
 
-                <a href="https://staging.pictura.com.au/stopc" target="_blank" class="portfolio__item">
+                <a href="https://staging.pictura.com.au/stopc" rel="noopener noreferrer" target="_blank"
+                    class="portfolio__item">
                     <span class="tag">Advanced WordPress</span>
                     <img src="img/portfolio/thumbnails/9.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
@@ -472,7 +481,8 @@
 
                 <!-- Portfolio item SGB -->
 
-                <a href="https://sgbmaintenance.com.au" target="_blank" class="portfolio__item">
+                <a href="https://sgbmaintenance.com.au" rel="noopener noreferrer" target="_blank"
+                    class="portfolio__item">
                     <span class="tag">Advanced WordPress</span>
                     <img src="img/portfolio/thumbnails/sgb.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
@@ -498,7 +508,8 @@
 
                 <!-- Portfolio item Lantern -->
 
-                <a href="https://lanternelectrical.com.au/" target="_blank" class="portfolio__item">
+                <a href="https://lanternelectrical.com.au/" rel="noopener noreferrer" target="_blank"
+                    class="portfolio__item">
                     <span class="tag">Advanced WordPress</span>
                     <img src="img/portfolio/thumbnails/11.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
@@ -524,7 +535,8 @@
 
                 <!-- Portfolio item Rugged Nepal -->
 
-                <a href="https://www.ruggedtrailsnepal.com/" target="_blank" class="portfolio__item">
+                <a href="https://www.ruggedtrailsnepal.com/" rel="noopener noreferrer" target="_blank"
+                    class="portfolio__item">
                     <span class="tag">CodeIgniter PHP</span>
                     <img src="img/portfolio/thumbnails/4.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
@@ -543,7 +555,8 @@
 
                 <!-- Portfolio item BABU -->
 
-                <a href="https://www.babuadventure.com/" target="_blank" class="portfolio__item">
+                <a href="https://www.babuadventure.com/" rel="noopener noreferrer" target="_blank"
+                    class="portfolio__item">
                     <span class="tag">CodeIgniter PHP</span>
                     <img src="img/portfolio/thumbnails/6.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
@@ -563,7 +576,8 @@
 
                 <!-- Portfolio item Antenna Central -->
 
-                <a href="https://antennacentral.com.au" target="_blank" class="portfolio__item">
+                <a href="https://antennacentral.com.au" rel="noopener noreferrer" target="_blank"
+                    class="portfolio__item">
                     <span class="tag">Advanced WordPress</span>
                     <img src="img/portfolio/thumbnails/1-2.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
@@ -589,7 +603,8 @@
 
                 <!-- Portfolio item Job Base -->
 
-                <a href="http://jobbase.epizy.com/web/" target="_blank" class="portfolio__item">
+                <a href="http://jobbase.epizy.com/web/" rel="noopener noreferrer" target="_blank"
+                    class="portfolio__item">
                     <span class="tag">Yii2 PHP</span>
                     <img src="img//portfolio/thumbnails/7.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
@@ -607,7 +622,8 @@
 
                 <!-- Portfolio item Booking Manage -->
 
-                <a href="http://bookingmanage.epizy.com/" target="_blank" class="portfolio__item">
+                <a href="http://bookingmanage.epizy.com/" rel="noopener noreferrer" target="_blank"
+                    class="portfolio__item">
                     <span class="tag">Core PHP</span>
                     <img src="img//portfolio/thumbnails/1.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
@@ -624,7 +640,8 @@
 
                 <!-- Portfolio item Event Manage -->
 
-                <a href="http://eventmanage.epizy.com" target="_blank" class="portfolio__item">
+                <a href="http://eventmanage.epizy.com" rel="noopener noreferrer" target="_blank"
+                    class="portfolio__item">
                     <span class="tag">Core PHP</span>
 
                     <img src="img/portfolio/thumbnails/2.webp" alt="" class="portfolio__img">
@@ -642,7 +659,8 @@
 
                 <!-- Portfolio item Loyal Partners -->
 
-                <a href="http://www.loyalpartners.epizy.com/" target="_blank" class="portfolio__item">
+                <a href="http://www.loyalpartners.epizy.com/" rel="noopener noreferrer" target="_blank"
+                    class="portfolio__item">
                     <span class="tag">Core PHP</span>
                     <img src="img/portfolio/thumbnails/3.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
@@ -659,7 +677,8 @@
 
                 <!-- Portfolio item Forum-->
 
-                <a href="http://eventforum.epizy.com/" target="_blank" class="portfolio__item">
+                <a href="http://eventforum.epizy.com/" rel="noopener noreferrer" target="_blank"
+                    class="portfolio__item">
                     <span class="tag">Core PHP</span>
                     <img src="img/portfolio/thumbnails/5.webp" alt="" class="portfolio__img">
                     <div class="portfolio-box-caption">
@@ -854,22 +873,26 @@
             </a>
             <ul class="social-list">
                 <li class="social-list__item">
-                    <a class="social-list__link" href="https://linkedin.com/in/mirajaryal" target="_blank">
+                    <a class="social-list__link social-linkedin" aria-label="Linkedin"
+                        href="https://linkedin.com/in/mirajaryal" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-linkedin"></i>
                     </a>
                 </li>
                 <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/miraj977" target="_blank">
+                    <a class="social-list__link social-github" aria-label="Github" href="https://github.com/miraj977"
+                        target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-github"></i>
                     </a>
                 </li>
                 <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.instagram.com/miraj977/" target="_blank">
+                    <a class="social-list__link social-instagram" aria-label="Instagram"
+                        href="https://www.instagram.com/miraj977/" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </li>
                 <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.youtube.com/c/MrDevil977/videos" target="_blank">
+                    <a class="social-list__link social-facebook" aria-label="Facebook"
+                        href="https://www.youtube.com/c/MrDevil977/videos" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-youtube"></i>
                     </a>
                 </li>
@@ -895,7 +918,8 @@
         </script>
         <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"
+            async>
         </script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js">
         </script>

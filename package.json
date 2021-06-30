@@ -1,0 +1,28 @@
+{
+  "name": "mirajportfolio",
+  "version": "1.0.0",
+  "description": "My online portfolio",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miraj977/modern-portfolio-v2.git"
+  },
+  "keywords": [
+    "Miraj",
+    "Aryal",
+    "Online",
+    "Portfolio"
+  ],
+  "author": "Miraj Aryal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miraj977/modern-portfolio-v2/issues"
+  },
+  "homepage": "https://github.com/miraj977/modern-portfolio-v2#readme",
+  "devDependencies": {
+    "webpack": "^5.41.1"
+  }
+}

@@ -213,6 +213,13 @@ document.addEventListener( 'DOMContentLoaded', function ()
 const themeSwitcher = document.getElementById( "theme-switch" );
 const tooltip = $( '.theme-tooltip' );
 themeSwitcher.checked = false;
+
+if ( window.innerWidth < 600 )
+{
+    themeSwitcher.checked = true;
+    document.body.classList.remove( "light" );
+    document.body.classList.add( "dark" );
+}
 function clickHandler ()
 {
     if ( this.checked )
